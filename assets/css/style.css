@@ -1,0 +1,89 @@
+:root {
+  --preto: #000;
+  --branco: #fff;
+  --branco-forte: #ddd;
+  --cinza: #111;
+  --cinza-claro: ##777;
+  --cinza-fundo: #282e34;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8rem;
+  font-family: sans-serif;
+  color: var(--cinza-claro);
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url('../img/cachorrinho.jpg');
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url('../img/tigre.jpg');
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url('../img/urso.jpg');
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: var(--preto);
+}
+
+.caption span.border {
+  background-color: #111;
+  color: var(--branco);
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: var(--cinza);
+}
+.entre__img {
+  color: var(--branco-forte);
+  background-color: var(--cinza-fundo);
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+.texto-img {
+  background-color: transparent !important;
+  font-size: 25px;
+  color: #f7f7f7;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: fixed;
+  }
+}
